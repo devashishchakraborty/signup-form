@@ -42,7 +42,7 @@ body{
     color: white;
 }
 
-img{
+.odin-logo img{
     height: 80%;
 }
 
@@ -50,4 +50,8 @@ img{
     color: white;
     align-self: center;
     margin-bottom: 8px;
+}
+
+.photo-credit a{
+    color: white;
 }
