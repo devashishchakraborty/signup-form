@@ -27,11 +27,15 @@ body{
 }
 
 .odin-logo{
+    margin-top: 100px;
     display: flex;
-    height: 100px;
+    height: 140px;
     background-color: rgba(50, 50, 50, 0.5);
     justify-content: center;
     align-items: center;
+    font-family: norse-bold;
+    font-size: 5rem;
+    color: white;
 }
 
 img{
