@@ -2,3 +2,25 @@
     font-family: norse-bold;
     src: url(fonts/Norse-Bold.otf);
 }
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.side-area{
+    flex: 1;
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.form-area{
+    flex: 2;
+}
