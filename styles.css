@@ -7,8 +7,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
-    --width: 80%;
-    --padding: 0 24px;
 }
 
 .container{
@@ -18,7 +16,7 @@ body{
     align-items: stretch;
 }
 
-.side-area{
+.background-area{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -39,17 +37,21 @@ body{
 }
 
 .form-area-heading{
-    margin-bottom: 16px;
+    margin: 24px 32px;
     font-size: 1.1rem;
-    font-weight: bold;
-    padding: var(--padding);
-    width: var(--width);
+    font-weight: bolder;
+    width: 80%;
 }
 
-.form-area-subheading{
-    margin-bottom: 24px;
-    font-size: 1rem;
+.form-input-area{
+    padding: 16px 32px 24px 32px;
+    background-color: #ffffff;
+}
+
+.phrase{
+    font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 16px;
 }
 
 .odin-logo{
@@ -76,4 +78,31 @@ body{
 
 .photo-credit a{
     color: white;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #484848;
+}
+
+.form-inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    row-gap: 16px;
+    column-gap: 48px;
+}
+
+button{
+    margin: 24px 32px;
+    padding: 4px 32px;
+}
+
+.login{
+    margin-left: 32px;
 }
