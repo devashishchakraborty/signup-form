@@ -7,12 +7,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 .container{
-    display: flex;
-    width: 100vw;
     height: 100vh;
+    display: flex;
     align-items: stretch;
 }
 
@@ -38,9 +38,9 @@ body{
 
 .form-area-heading{
     margin: 24px 32px;
-    font-size: 1.1rem;
+    font-size: 1.2em;
     font-weight: bolder;
-    width: 80%;
+    width: 600px;
 }
 
 .form-input-area{
@@ -91,9 +91,34 @@ form label{
     color: #484848;
 }
 
+form input{
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 4px 8px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+form input:focus{
+    border-color: blue;
+    box-shadow: 2px 2px 4px rgb(204, 204, 204);
+}
+
+form input.error{
+    border-color: red;
+}
+
+form input.error + span::before{
+    position: absolute;
+    content: "* Passwords do not match";
+    font-size: 0.7rem;
+    color: red;
+}
+
 .form-inputs{
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 220px);
+    grid-template-columns: repeat(2, 240px);
     row-gap: 16px;
     column-gap: 48px;
 }
