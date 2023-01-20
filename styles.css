@@ -93,16 +93,35 @@ form label{
 
 .form-inputs{
     display: grid;
-    grid-template-columns: repeat(2, 240px);
+    grid-template-columns: repeat(2, 220px);
     row-gap: 16px;
     column-gap: 48px;
 }
 
 button{
+    background-color: #596D48;
     margin: 24px 32px;
-    padding: 4px 32px;
+    height: 40px;
+    width: 200px;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 2px 2px 4px #d8d9da;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #62784f;
 }
 
 .login{
     margin-left: 32px;
+}
+
+.login a{
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
 }
