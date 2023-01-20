@@ -3,6 +3,10 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -11,7 +15,7 @@ body{
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: stretch;
 }
@@ -38,14 +42,21 @@ body{
 
 .form-area-heading{
     margin: 24px 32px;
+    margin-top: 0;
     font-size: 1.2em;
     font-weight: bolder;
-    width: 600px;
+    max-width: 600px;
+}
+
+.form-area-heading p{
+    margin-top: 0;
 }
 
 .form-input-area{
+    min-width: 300px;
     padding: 16px 32px 24px 32px;
     background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .phrase{
@@ -111,16 +122,16 @@ form input.error{
 form input.error + span::before{
     position: absolute;
     content: "* Passwords do not match";
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     color: red;
 }
 
 .form-inputs{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 240px);
-    row-gap: 16px;
-    column-gap: 48px;
+    max-width: 600px;
+    row-gap: 18px;
+    column-gap: 36px;
 }
 
 button{
@@ -133,7 +144,7 @@ button{
     font-size: 0.9rem;
     font-weight: bolder;
     color: white;
-    box-shadow: 2px 2px 4px #d8d9da;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 button:hover{
@@ -149,4 +160,10 @@ button:hover{
     color: #596d48;
     font-weight: bold;
     text-decoration: none;
+}
+
+@media (min-width: 810px) {
+    .form-inputs{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
