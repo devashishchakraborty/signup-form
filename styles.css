@@ -38,6 +38,7 @@ body{
     justify-content: center;
     flex: 2;
     background-color: #f9fafb;
+    flex-wrap: wrap;
 }
 
 .form-area-heading{
