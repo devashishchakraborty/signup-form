@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="match_password.js" defer></script>
     <title>Sign up Form</title>
   </head>
   <body>
@@ -55,20 +56,20 @@
               <div class="form-row">
                 <label for="password">PASSWORD</label>
                 <input
-                  class="error"
                   type="password"
                   name="password"
                   id="password"
+                  matched=""
                   required
                 />
               </div>
               <div class="form-row">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
                 <input
-                  class="error"
                   type="password"
                   name="confirm-password"
                   id="confirm-password"
+                  matched=""
                   required
                 />
                 <span></span>
