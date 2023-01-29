@@ -7,7 +7,7 @@
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/49796291/213804581-5dc3a668-c982-4215-9fec-32a3478999af.png)
+![image](images/screenshot.png)
 
 ## Future Additions
 
