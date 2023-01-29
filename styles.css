@@ -1,176 +1,177 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
 
 @font-face {
-    font-family: norse-bold;
-    src: url(fonts/Norse-Bold.otf);
+  font-family: norse-bold;
+  src: url(fonts/Norse-Bold.otf);
 }
 
-html, body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    height: 100%;
-    display: flex;
-    align-items: stretch;
+.container {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
-.background-area{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    background-image: url("images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-width: 300px;
-    justify-content: space-between;
+.background-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 300px;
+  justify-content: space-between;
 }
 
-.form-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 2;
-    background-color: #f9fafb;
-    flex-wrap: wrap;
+.form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  background-color: #f9fafb;
+  flex-wrap: wrap;
 }
 
-.form-area-heading{
-    margin: 24px 32px;
-    margin-top: 0;
-    font-size: 1.2em;
-    font-weight: bolder;
-    max-width: 600px;
+.form-area-heading {
+  margin: 24px 32px;
+  margin-top: 0;
+  font-size: 1.2em;
+  font-weight: bolder;
+  max-width: 600px;
 }
 
-.form-area-heading p{
-    margin-top: 0;
+.form-area-heading p {
+  margin-top: 0;
 }
 
-.form-input-area{
-    min-width: 300px;
-    padding: 16px 32px 24px 32px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.form-input-area {
+  min-width: 300px;
+  padding: 16px 32px 24px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.phrase{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 16px;
+.phrase {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
-.odin-logo{
-    margin-top: 160px;
-    display: flex;
-    height: 120px;
-    background-color: rgba(0, 20, 0, 0.4);
-    justify-content: center;
-    align-items: center;
-    font-family: norse-bold;
-    font-size: 5rem;
-    color: white;
+.odin-logo {
+  margin-top: 160px;
+  display: flex;
+  height: 120px;
+  background-color: rgba(0, 20, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  font-family: norse-bold;
+  font-size: 5rem;
+  color: white;
 }
 
-.odin-logo img{
-    height: 80%;
+.odin-logo img {
+  height: 80%;
 }
 
-.photo-credit{
-    color: white;
-    align-self: center;
-    margin-bottom: 8px;
+.photo-credit {
+  color: white;
+  align-self: center;
+  margin-bottom: 8px;
 }
 
-.photo-credit a{
-    color: white;
+.photo-credit a {
+  color: white;
 }
 
-.form-row{
-    display: flex;
-    flex-direction: column;
+.form-row {
+  display: flex;
+  flex-direction: column;
 }
 
-form label{
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #484848;
+form label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #484848;
 }
 
-form input{
-    border: 2px solid #E5E7EB;
-    border-radius: 4px;
-    padding: 4px 8px;
-    outline: none;
-    font-size: 0.9rem;
+form input {
+  border: 2px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  outline: none;
+  font-size: 0.9rem;
 }
 
-form input:focus{
-    border-color: blue;
-    box-shadow: 2px 2px 4px rgb(204, 204, 204);
+form input:focus {
+  border-color: blue;
+  box-shadow: 2px 2px 4px rgb(204, 204, 204);
 }
 
-form input[type="password"][matched="false"]{
-    border-color: red;
+form input[type="password"][matched="false"] {
+  border-color: red;
 }
 
-form input[type="password"][matched="true"]{
-    border-color: green;
+form input[type="password"][matched="true"] {
+  border-color: green;
 }
 
-form input#confirm-password[matched="false"] + span::before{
-    position: absolute;
-    content: "* Passwords do not match";
-    font-size: 0.65rem;
-    color: red;
+form input#confirm-password[matched="false"] + span::before {
+  position: absolute;
+  content: "* Passwords do not match";
+  font-size: 0.65rem;
+  color: red;
 }
 
-.form-inputs{
-    position: relative;
-    display: grid;
-    max-width: 600px;
-    row-gap: 18px;
-    column-gap: 36px;
+.form-inputs {
+  position: relative;
+  display: grid;
+  max-width: 600px;
+  row-gap: 18px;
+  column-gap: 36px;
 }
 
-button{
-    background-color: #596D48;
-    margin: 24px 32px;
-    height: 40px;
-    width: 200px;
-    border-radius: 4px;
-    border-style: none;
-    font-size: 0.9rem;
-    font-weight: bolder;
-    color: white;
-    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+button {
+  background-color: #596d48;
+  margin: 24px 32px;
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-button:hover{
-    cursor: pointer;
-    background-color: #62784f;
+button:hover {
+  cursor: pointer;
+  background-color: #62784f;
 }
 
-.login{
-    margin-left: 32px;
+.login {
+  margin-left: 32px;
 }
 
-.login a{
-    color: #596d48;
-    font-weight: bold;
-    text-decoration: none;
+.login a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 @media (min-width: 810px) {
-    .form-inputs{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .form-inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
