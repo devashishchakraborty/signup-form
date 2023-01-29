@@ -10,3 +10,10 @@ password.addEventListener("focus", function(){
         console.log(passwordValue === confirmPasswordValue);
     })
 });
+
+confirmPassword.addEventListener("focus", function(){
+    confirmPassword.addEventListener("keyup", function(){
+        confirmPasswordValue = confirmPassword.value;
+        console.log(passwordValue === confirmPasswordValue);
+    })
+});
