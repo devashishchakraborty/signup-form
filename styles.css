@@ -118,11 +118,15 @@ form input:focus{
     box-shadow: 2px 2px 4px rgb(204, 204, 204);
 }
 
-form input.error{
+form input[type="password"][matched="false"]{
     border-color: red;
 }
 
-form input.error + span::before{
+form input[type="password"][matched="true"]{
+    border-color: green;
+}
+
+form input#confirm-password[matched="false"] + span::before{
     position: absolute;
     content: "* Passwords do not match";
     font-size: 0.65rem;
